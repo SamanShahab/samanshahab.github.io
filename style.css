@@ -474,35 +474,75 @@ header nav.scrolled .toggle-btn {
   color: #111;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  /* Navbar */
+
+/*changes*/
+/* ==========================
+   📱 Responsive Design
+========================== */
+
+/* Tablets */
+@media (max-width: 992px) {
   header nav {
-    flex-direction: column;
-    padding: 10px 20px;
+    padding: 12px 25px;
   }
 
   nav ul {
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 10px;
+    gap: 10px;
   }
 
-  nav li {
-    margin: 5px 0;
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+
+  .stats div {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  /* Navbar */
+  nav ul {
+    display: none; /* default hide */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .toggle-btn {
+    font-size: 1.8rem;
   }
 
   /* Hero Section */
   .hero h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .hero p {
     font-size: 1rem;
-  }
-
-  .hero {
-    padding: 100px 20px 60px; /* extra top & bottom padding */
   }
 
   .btn {
@@ -510,18 +550,16 @@ header nav.scrolled .toggle-btn {
     font-size: 0.9rem;
   }
 
-  /* About Section */
+  /* About */
+  section {
+    padding: 60px 20px;
+  }
+
   .about-content {
-    flex-direction: column;
-    text-align: center;
+    gap: 20px;
   }
 
-  .profile-pic {
-    width: 150px;
-    height: 150px;
-  }
-
-  /* Projects Grid */
+  /* Projects */
   .project-grid {
     grid-template-columns: 1fr;
   }
@@ -531,31 +569,58 @@ header nav.scrolled .toggle-btn {
     grid-template-columns: 1fr;
   }
 
-  /* Stats Section */
+  /* Stats */
   .stats {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+  }
+
+  .stats div {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* Contact */
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+
+  /* Footer */
+  .social-links {
+    flex-wrap: wrap;
+    gap: 12px;
   }
 }
 
-/* Extra small screens */
+/* Extra small phones */
 @media (max-width: 480px) {
   .hero h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .hero p {
     font-size: 0.9rem;
   }
 
-  nav .logo {
-    font-size: 1.2rem;
+  .btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
   }
 
-  .stats div {
-    width: 100%;
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
   }
 }
+
 
 
 
