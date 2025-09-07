@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader">
+    <div class="circle"><span>S</span></div>
+  </div>
+
+  <!-- Navbar + Hero -->
+  <header>
+    <nav>
+      <h1 class="logo">Saman<span>Khan</span></h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#github-projects">Github Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.html" target="_blank">Resume</a></li>
+      </ul>
+      <!-- Dark Mode Toggle -->
+      <button class="toggle-btn">🌙</button>
+    </nav>
+    <section class="hero" data-aos="fade-up">
+      <h2>Hi, I’m Saman Khan</h2>
+      <p>Aspiring Web Developer & Designer</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </section>
+  </header>
+
+  <!-- About / Services -->
+ <section id="about" class="about" data-aos="fade-right">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <img src="images/saman.png" alt="Your Profile Picture" class="profile-pic">
+    <p>
+      👉 Professional with expertise in HTML, CSS, and JavaScript, <br>skilled at building responsive, user-friendly websites & <br> continuously exploring modern web technologies.
+    </p>
+  </div>
+</section>
+
+  <!-- Projects -->
+<!-- Projects -->
+<section id="projects" class="projects" data-aos="zoom-in">
+  <h2>Projects</h2>
+
+  <!-- Filter Buttons -->
+  <div class="filter-btns">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="web">Web</button>
+    <button class="filter" data-filter="app">Apps</button>
+    <button class="filter" data-filter="design">Design</button>
+  </div>
+
+  <!-- Project Grid -->
+  <div class="project-grid">
+    <div class="card" data-category="web">
+      <img src="images/new img.png" alt="Web Project">
+      <div class="overlay">
+        <h3>Web Project</h3>
+        <p>Responsive website design</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="app">
+      <img src="images/3img.png" alt="App Project">
+      <div class="overlay">
+        <h3>Mobile App</h3>
+        <p>Android/iOS App</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="design">
+      <img src="images/4img.png" alt="Design Project">
+      <div class="overlay">
+        <h3>UI/UX Design</h3>
+        <p>Creative Figma Prototype</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="web">
+      <img src="images/5img.png" alt="Web Project 2">
+      <div class="overlay">
+        <h3>E-commerce Website</h3>
+        <p>Online shopping platform</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="github-projects" class="github-projects" data-aos="fade-up">
+  <h2>My GitHub Projects</h2>
+  <div class="github-grid">
+
+    <div class="gh-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="gh-icon">💻</div>
+      <h3>BidSpirit Website</h3>
+      <p>A modern responsive E-Commerce website built with HTML, CSS & JS.</p>
+      <a href="https://github.com/SamanShahab/BidSpirit-Website.git" target="_blank" class="gh-btn">View on GitHub</a>
+    </div>
+
+    <div class="gh-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="gh-icon">✅</div>
+      <h3>LMS Project</h3>
+      <p>A PHP based-platform with database manage & track learning progress.</p>
+      <a href="https://github.com/SamanShahab/lms_project.git" target="_blank" class="gh-btn">View on GitHub</a>
+    </div>
+
+    <div class="gh-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="gh-icon">🌦️</div>
+      <h3>Weather App</h3>
+      <p>Weather forecast app using OpenWeather API.</p>
+      <a href="https://github.com/SamanShahab/Weather-API.git" target="_blank" class="gh-btn">View on GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Stats -->
+  <section class="stats" data-aos="fade-up">
+    <div><h3 class="counter" data-target="120">0</h3><p>Happy Clients</p></div>
+    <div><h3 class="counter" data-target="50">0</h3><p>Successful Projects</p></div>
+    <div><h3 class="counter" data-target="490">0</h3><p>Team Members</p></div>
+    <div><h3 class="counter" data-target="100">0</h3><p>Winning Awards</p></div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input name="name" type="text" placeholder="Your Name" required />
+      <input name="email" type="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+  <p>© 2025 Saman Khan. All Rights Reserved. Made By Saman Developer.</p>
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/1KrCnjKNtS/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href=" https://x.com/SamanKhan13513?t=3Ysy88FBKa7keplqGB13hw&s=08 " target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/_sanamkhan_123?igsh=cmdxaDh3aHMxanZi" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/saman-khan-b91120346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/SamanShahab" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 80 },
+    "color": { "value": "#ff9800" },
+    "shape": { "type": "circle" },
+    "opacity": { "value": 0.5 },
+    "size": { "value": 4 },
+    "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.3, "width": 1 },
+    "move": { "enable": true, "speed": 4 }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": { "enable": true, "mode": "repulse" },
+      "onclick": { "enable": true, "mode": "push" }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+</body>
+</html>
