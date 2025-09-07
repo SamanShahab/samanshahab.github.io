@@ -240,59 +240,6 @@ section { padding: 100px 50px; text-align: center; }
 
 
 /* Contact Form Stylish */
-/* .contact {
-  background: linear-gradient(135deg, #f8f8f8, #ffe6d5);
-  padding: 80px 40px;
-  border-radius: 25px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-}
-
-.contact form {
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contact input,
-.contact textarea {
-  padding: 14px;
-  border: none;
-  border-radius: 12px;
-  font-size: 1rem;
-  background: rgba(255,255,255,0.9);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-}
-
-.contact input:focus,
-.contact textarea:focus {
-  outline: none;
-  transform: scale(1.03);
-  box-shadow: 0 0 12px var(--primary), 0 0 20px var(--accent);
-}
-
-.contact button {
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: #fff;
-  padding: 15px;
-  border: none;
-  border-radius: 35px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: all 0.3s;
-}
-
-.contact button:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-} */
-
-
-/* Contact Form Stylish */
 .contact {
   background: linear-gradient(135deg, #080808, #dab49b);
   padding: 80px 40px;
@@ -526,3 +473,84 @@ header nav.scrolled a {
 header nav.scrolled .toggle-btn {
   color: #111;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  /* Navbar */
+  header nav {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  /* Hero Section */
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* About Section */
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Projects Grid */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Github Projects */
+  .github-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stats Section */
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  nav .logo {
+    font-size: 1.2rem;
+  }
+
+  .stats div {
+    width: 100%;
+  }
+}
+
+
