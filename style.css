@@ -501,6 +501,10 @@ header nav.scrolled .toggle-btn {
     font-size: 1rem;
   }
 
+  .hero {
+    padding: 100px 20px 60px; /* extra top & bottom padding */
+  }
+
   .btn {
     padding: 10px 20px;
     font-size: 0.9rem;
@@ -552,5 +556,6 @@ header nav.scrolled .toggle-btn {
     width: 100%;
   }
 }
+
 
 
